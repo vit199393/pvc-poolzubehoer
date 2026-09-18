@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PVC Poolzubehör | POOL Total - Wir machen Pools klar!</title>
+<meta name="description" content="Spezialist für PVC Poolzubehör: Kugelhähne, PVC-Fittings, Poolflex-Schläuche, FlexFit-Verbindungssätze und mehr. Qualität direkt vom Fachhändler aus Minden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-info">
+      <span>📞 +49 (0) 571 930 930 0</span>
+      <span>✉️ info@pooltotal.com</span>
+    </div>
+    <div class="topbar-info">
+      <span>🚚 Versandkostenfrei ab 99 €</span>
+      <span>📍 Minden, NRW</span>
+    </div>
+  </div>
+</div>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">💧</div>
+      <div class="logo-text">
+        PVC Poolzubehör
+        <small>by POOL Total</small>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#kategorien">Kategorien</a>
+      <a href="#produkte">Produkte</a>
+      <a href="#jtl">JTL-Anbindung</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="nav-actions">
+      <button class="cart-btn" onclick="toggleCart()">🛒 <span class="cart-count" id="cartCount">0</span></button>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </div>
+</nav>
+<section class="hero" style="padding: 0;">
+  <div class="hero-bg"></div>
+  <svg class="wave-decoration" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z" fill="white" opacity="0.05"/>
+    <path d="M0,80 C240,40 480,120 720,80 C960,40 1200,120 1440,80 L1440,120 L0,120 Z" fill="white" opacity="0.03"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow" style="color: var(--aqua);">Spezialist für PVC Poolzubehör</span>
+        <h1>Professionelles PVC-Zubehör für <span class="highlight">ein klares Poolerlebnis</span></h1>
+        <p>Vom Kugelhahn über Poolflex-Schläuche bis hin zu kompletten Verbindungssätzen - bei uns finden Sie alles für die professionelle Pool-Installation. Direkt vom Fachhändler aus Minden.</p>
+        <div class="hero-cta">
+          <a href="#produkte" class="btn btn-primary">Produkte entdecken →</a>
+          <a href="#kategorien" class="btn btn-outline">Kategorien ansehen</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <h3>Warum POOL Total?</h3>
+          <div class="hero-stats">
+            <div class="hero-stat"><div class="num">15+</div><div class="label">Jahre Erfahrung</div></div>
+            <div class="hero-stat"><div class="num">1.100+</div><div class="label">Kategorien</div></div>
+            <div class="hero-stat"><div class="num">4,76★</div><div class="label">Trusted Shops</div></div>
+            <div class="hero-stat"><div class="num">99€</div><div class="label">Versandfrei</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><div class="trust-icon">🚚</div> Versandkostenfrei ab 99 €</div>
+    <div class="trust-item"><div class="trust-icon">↩️</div> 30 Tage Rückgaberecht</div>
+    <div class="trust-item"><div class="trust-icon">🛡️</div> Trusted Shops Käuferschutz</div>
+    <div class="trust-item"><div class="trust-icon">🔧</div> Fachberatung aus Minden</div>
+    <div class="trust-item"><div class="trust-icon">📦</div> Sofort ab Lager lieferbar</div>
+  </div>
+</div>
+<section id="kategorien">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Produktkategorien</span>
+      <h2>Alles für Ihre Pool-Installation</h2>
+      <p>Von der einfachen PVC-Muffe bis zum kompletten Bypass-Set - entdecken Sie unser Sortiment.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card reveal" onclick="filterByCategory('kugelhaehne')"><div class="cat-icon">🔵</div><h3>Kugelhähne</h3><p>Praher 2/3-Wege, manuell & elektrisch</p><span class="cat-count">Ø50-63mm</span></div>
+      <div class="cat-card reveal" onclick="filterByCategory('fittings')"><div class="cat-icon">🔧</div><h3>PVC-Fittings</h3><p>Winkel, Muffen, T-Stücke, Kappen</p><span class="cat-count">Ø50-90mm</span></div>
+      <div class="cat-card reveal" onclick="filterByCategory('schlaeuche')"><div class="cat-icon">🪢</div><h3>Poolflex-Schläuche</h3><p>Druckschläuche, isoliert & Standard</p><span class="cat-count">1m - 25m</span></div>
+      <div class="cat-card reveal" onclick="filterByCategory('sets')"><div class="cat-icon">📦</div><h3>Komplett-Sets</h3><p>Bypass-Sets, FlexFit-Verbindungssätze</p><span class="cat-count">Komplett</span></div>
+      <div class="cat-card reveal" onclick="filterByCategory('ventile')"><div class="cat-icon">⚙️</div><h3>Rückschlagventile</h3><p>Check valves, Sichtfenster, Absperrungen</p><span class="cat-count">Ø50-63mm</span></div>
+      <div class="cat-card reveal" onclick="filterByCategory('wanddurchfuehrungen')"><div class="cat-icon">🧱</div><h3>Wanddurchführungen</h3><p>Einbauteile für Poolwände & Skimmer</p><span class="cat-count">Verschiedene Ø</span></div>
+      <div class="cat-card reveal" onclick="filterByCategory('kleber')"><div class="cat-icon">🧴</div><h3>Kleber & Dichtmittel</h3><p>PVC-Kleber, Teflonband, Reiniger</p><span class="cat-count">Zubehör</span></div>
+      <div class="cat-card reveal" onclick="filterByCategory('rohre')"><div class="cat-icon">📏</div><h3>PVC-Rohre</h3><p>Druckrohre, Sammlerrohre, Anschlussrohre</p><span class="cat-count">Ø50-110mm</span></div>
+    </div>
+  </div>
+</section>
+<section id="produkte">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Unser Sortiment</span>
+      <h2>PVC Poolzubehör Produkte</h2>
+      <p>Direkt aus dem JTL-WaWi Bestand - alle Preise und Verfügbarkeiten in Echtzeit.</p>
+    </div>
+    <div class="filter-bar">
+      <div class="filter-tags" id="filterTags">
+        <button class="filter-tag active" data-filter="all" onclick="filterProducts('all')">Alle</button>
+        <button class="filter-tag" data-filter="kugelhaehne" onclick="filterProducts('kugelhaehne')">Kugelhähne</button>
+        <button class="filter-tag" data-filter="fittings" onclick="filterProducts('fittings')">Fittings</button>
+        <button class="filter-tag" data-filter="schlaeuche" onclick="filterProducts('schlaeuche')">Schläuche</button>
+        <button class="filter-tag" data-filter="sets" onclick="filterProducts('sets')">Sets</button>
+        <button class="filter-tag" data-filter="ventile" onclick="filterProducts('ventile')">Ventile</button>
+        <button class="filter-tag" data-filter="wanddurchfuehrungen" onclick="filterProducts('wanddurchfuehrungen')">Wanddurchführungen</button>
+        <button class="filter-tag" data-filter="kleber" onclick="filterProducts('kleber')">Kleber & Dichtmittel</button>
+        <button class="filter-tag" data-filter="rohre" onclick="filterProducts('rohre')">Rohre</button>
+      </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="productSearch" placeholder="Produkt suchen..." oninput="searchProducts()">
+      </div>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+<section class="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Ihre Vorteile</span>
+      <h2>Warum Fachhändler-Qualität?</h2>
+      <p>Über 15 Jahre Erfahrung in der Pool-Installation und Wasserpflege.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal"><div class="feature-icon">🏆</div><h3>Original-Qualität</h3><p>Wir führen ausschließlich Markenprodukte von Praher, Jasonflex, Poolflex und weiteren Herstellern - kein Billig-Import.</p></div>
+      <div class="feature-card reveal"><div class="feature-icon">📦</div><h3>Echtzeit-Bestand</h3><p>Direkt an JTL-WaWi angebunden: Was Sie sehen, ist auf Lager. Keine versteckten Lieferzeiten.</p></div>
+      <div class="feature-card reveal"><div class="feature-icon">💬</div><h3>Fachberatung</h3><p>Uns reicht "passt schon" nicht. Bei Fragen zu Durchmessern, Materialien oder Installation - rufen Sie an.</p></div>
+    </div>
+  </div>
+</section>
+<section id="jtl" class="jtl-banner">
+  <div class="jtl-inner">
+    <div class="jtl-text">
+      <span class="eyebrow" style="color: var(--aqua);">JTL-WaWi Anbindung</span>
+      <h2>Produktdaten direkt aus JTL-WaWi</h2>
+      <p>Diese Website ist mit JTL-WaWi verbunden. Produktdaten, Preise und Lagerbestände werden automatisch synchronisiert - ganz ohne manuellen Aufwand.</p>
+      <div class="jtl-badges">
+        <div class="jtl-badge">🔄 Automatische Synchronisation</div>
+        <div class="jtl-badge">📊 Echtzeit-Bestände</div>
+        <div class="jtl-badge">💰 Aktuelle Preise</div>
+        <div class="jtl-badge">📦 Auftragsimport</div>
+      </div>
+    </div>
+    <div class="jtl-visual">
+      <div class="jtl-flow">
+        <div class="jtl-step"><div class="jtl-step-num">1</div><div class="jtl-step-text"><strong>JTL-WaWi Export</strong> - Produktexport als JSON/XML über JTL-Connector oder REST-API</div></div>
+        <div class="jtl-step"><div class="jtl-step-num">2</div><div class="jtl-step-text"><strong>Automatischer Import</strong> - Website lädt Produktdaten (Name, Preis, Bestand, Bilder)</div></div>
+        <div class="jtl-step"><div class="jtl-step-num">3</div><div class="jtl-step-text"><strong>Bestell-Callback</strong> - Bestellungen werden als Aufträge ins JTL-WaWi geschrieben</div></div>
+        <div class="jtl-step"><div class="jtl-step-num">4</div><div class="jtl-step-text"><strong>Lager-Sync</strong> - Bestandsänderungen im WaWi aktualisieren die Website in Echtzeit</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="ueber-uns" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow">Über uns</span>
+        <h2>POOL Total GmbH - Ihr Pool-Fachhändler aus Minden</h2>
+        <p>Die POOL Total GmbH ist Ihr spezialisierter Online-Fachhändler für Pools, Poolzubehör, Wasserpflege sowie Wellnessprodukte. Als inhabergeführtes Familienunternehmen aus Minden begleiten wir unsere Kundinnen und Kunden seit mehr als 15 Jahren.</p>
+        <p>Besonders im Bereich PVC Poolzubehör bieten wir eine Tiefe, die sonst kaum ein Anbieter erreicht - vom einzelnen PVC-Winkel bis zum kompletten Bypass-Set für Ihre Filteranlage.</p>
+        <ul class="about-list">
+          <li><span class="check">✓</span> Über 15 Jahre Erfahrung im Pool-Fachhandel</li>
+          <li><span class="check">✓</span> Inhabergeführt in Minden, NRW</li>
+          <li><span class="check">✓</span> Trusted Shops Käuferschutz mit 4,76/5 Bewertung</li>
+          <li><span class="check">✓</span> Direkte Anbindung an JTL-WaWi für Echtzeit-Bestände</li>
+          <li><span class="check">✓</span> Fachberatung durch geschultes Personal</li>
+        </ul>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-card">
+          <h3>Kontakt aufnehmen</h3>
+          <div class="about-contact">
+            <div class="about-contact-item"><div class="about-contact-icon">📍</div><div class="about-contact-text"><strong>POOL Total GmbH</strong><span>Große Heide 3, 32425 Minden</span></div></div>
+            <div class="about-contact-item"><div class="about-contact-icon">📞</div><div class="about-contact-text"><strong>+49 (0) 571 930 930 0</strong><span>Mo-Fr 8:00 - 17:00 Uhr</span></div></div>
+            <div class="about-contact-item"><div class="about-contact-icon">✉️</div><div class="about-contact-text"><strong>info@pooltotal.com</strong><span>Antwort innerhalb 24h</span></div></div>
+            <div class="about-contact-item"><div class="about-contact-icon">🌐</div><div class="about-contact-text"><strong>www.pooltotal.com</strong><span>Hauptshop mit komplettem Sortiment</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="newsletter" id="kontakt">
+  <div class="container">
+    <h2>5 € Gutschein sichern</h2>
+    <p>Abonnieren Sie unseren Newsletter und erhalten Sie 5 € Gutschein für Ihre erste Bestellung.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Vielen Dank für Ihre Anmeldung!');">
+      <input type="email" placeholder="Ihre E-Mail-Adresse" required>
+      <button type="submit">Anmelden →</button>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><div class="logo-icon">💧</div><div class="logo-text">PVC Poolzubehör<small style="color: rgba(255,255,255,0.5);">by POOL Total</small></div></div>
+      <p>Spezialist für PVC Poolzubehör - Kugelhähne, Fittings, Schläuche und Komplett-Sets. Qualität direkt vom Fachhändler aus Minden.</p>
+      <p style="font-size: 0.82rem; opacity: 0.5;">...wir machen Pools klar!</p>
+    </div>
+    <div class="footer-col"><h4>Sortiment</h4><ul><li><a href="#produkte">Kugelhähne</a></li><li><a href="#produkte">PVC-Fittings</a></li><li><a href="#produkte">Poolflex-Schläuche</a></li><li><a href="#produkte">Komplett-Sets</a></li><li><a href="#produkte">Rückschlagventile</a></li></ul></div>
+    <div class="footer-col"><h4>Service</h4><ul><li><a href="#ueber-uns">Über uns</a></li><li><a href="#kontakt">Kontakt</a></li><li><a href="#">Versand & Lieferung</a></li><li><a href="#">Rückgabe</a></li><li><a href="#">FAQ</a></li></ul></div>
+    <div class="footer-col"><h4>Rechtliches</h4><ul><li><a href="#">Impressum</a></li><li><a href="#">Datenschutz</a></li><li><a href="#">AGB</a></li><li><a href="#">Widerrufsrecht</a></li><li><a href="#">GPSR</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 POOL Total GmbH · Große Heide 3, 32425 Minden · HRB 15129 · USt-ID DE307612922</span>
+    <span>Geschäftsführerin: Larissa Janz</span>
+  </div>
+</footer>
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header"><h3>Warenkorb</h3><button class="cart-close" onclick="toggleCart()">✕</button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer" id="cartFooter" style="display: none;">
+    <div class="cart-total"><span class="label">Gesamt (inkl. MwSt.)</span><span class="amount" id="cartTotal">0,00 € <small>zzgl. Versand</small></span></div>
+    <button class="cart-checkout" onclick="checkout()">Zur Kasse →</button>
+    <p class="cart-shipping-note">🚚 Versandkostenfrei ab 99 € · 30 Tage Rückgaberecht</p>
+  </div>
+</div>
+<div class="toast" id="toast"><span class="check">✓</span><span id="toastText">Zum Warenkorb hinzugefügt!</span></div>
+<script src="script.js"></script>
+</body>
+</html>
